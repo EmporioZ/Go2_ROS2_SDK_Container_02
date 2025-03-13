@@ -10,4 +10,4 @@ services:
     command: tail -f /dev/null
     environment:
       - ROBOT_IP=192.168.98.11
-      - CONN_TYPE=cyclonedds  # 或/or  webrtc
+      - CONN_TYPE=webrtc  # 或/or cyclonedds  
