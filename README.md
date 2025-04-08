@@ -31,4 +31,8 @@ common msgs can be read by using:
 ros2 topic echo /topic_name
 ```
 
-## To be continue......
+## To be continue......(2025.03)
+
+## Update beta0.2 (20250408)
+the docker-compose.yaml has been changed. Add a share space between the host and container. So you can get the file directly by using 
+" " 
