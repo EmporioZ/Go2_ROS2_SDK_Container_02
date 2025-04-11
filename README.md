@@ -34,5 +34,14 @@ ros2 topic echo /topic_name
 ## To be continue......(2025.03)
 
 ## Update beta0.2 (2025.04.08)
-the docker-compose.yaml has been changed. Add a share space between the host and container. So you can get the file directly by using 
-" " 
+the docker-compose.yaml has been changed. Add a share space between the host and container. 
+In the docker-compose.yaml:
+My folder is "/home/silco/data_share_container", change it by yours. And in the docker the folder name is "/data_share", you change it by you like.
+"
+volumes:
+      - /home/silco/data_share_container:/data_share
+"
+So you can get the file directly by using 
+...
+ros2 bag record -o /data_share/data01 /camera/image_raw
+...
