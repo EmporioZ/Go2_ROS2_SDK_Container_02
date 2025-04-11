@@ -11,3 +11,5 @@ services:
     environment:
       - ROBOT_IP=192.168.98.11
       - CONN_TYPE=webrtc  # 或/or cyclonedds  
+    volumes:
+      - /home/silco/data_share_container:/data_share
