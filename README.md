@@ -46,7 +46,7 @@ volumes:
       - /home/silco/data_share_container:/data_share
 "
 
-So you can get the file directly by using:
+So you can get the file directly by using: eg:
 
 ```
 ros2 bag record -o /data_share/data01 /camera/image_raw
